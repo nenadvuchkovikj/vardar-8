@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vardar 8 - Plivachki i Water polo klub</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://kit.fontawesome.com/b219fdc4e6.js"></script>
 </head>
 <body>
     
@@ -21,12 +22,16 @@
     </header>
 
     <!-- Fixed div -->
-    <div class="fixeddiv text-center">
-        <img src="./img/water-polo-ball.png">
-        <h2>Контактирајте не </h2>
-        <h4>Александар Ѓорѓески</h4>
-        <p><i class="fas fa-mobile-alt"></i> 077 777 777</p>
+    <div class="fixeddiv text-center" id="fixeddiv">
+        <div>
+            <img src="./img/water-polo-ball.png">
+                <h2>Контактирајте не </h2>
+                <h4>Александар Ѓорѓески</h4>
+                <p><i class="fas fa-mobile-alt"></i> 077 777 777</p>
+            </div>
+        </div>
     </div>
+
     <!-- Fixed button -->
     <a href="#header" class="fixedbutton btn"><i class="fas fa-arrow-up"></i></a>
 
@@ -133,20 +138,11 @@
                       <img src="./img/demo-picture.png">
                     </div>
                     <div class="profile-info">
-                        <h4>Ангеле Стефановски</h4>
+                        <h4>Марија Ѓорѓеска</h4>
                         <h6>Тренер</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio voluptas ut voluptatum doloribus dolorum voluptatibus enim ipsum veniam modi ea, consequuntur velit maiores omnis consectetur cupiditate expedita temporibus itaque.</p>
-                        <i class="fa fa-facebook fa-profile-custom"></i> <i class="fa fa-google-plus fa-profile-custom"></i> <i class="fa fa-twitter fa-profile-custom"></i> <i class="fa fa-linkedin fa-profile-custom"></i>
-                    </div>   
-                </div>
-                <div class="profile">
-                    <div>
-                      <img src="./img/demo-picture.png">
-                    </div>
-                    <div class="profile-info">
-                        <h4>Никола Томовски</h4>
-                        <h6>Тренер</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio voluptas ut voluptatum doloribus dolorum voluptatibus enim ipsum veniam modi ea, consequuntur velit maiores omnis consectetur cupiditate expedita temporibus itaque.</p>
+                        <p>Родена во Скопје 1994 година, Дипломиран педагог.  Има тренирано пливање повеќе од 10 години, учесник е на многу национални и меѓународни натпревари и е една од ретките девојчиња во Македонија која може да се пофали дека има играно и Ватерполо. 
+                            Марија е тренер на најмалите во нашиот клуб, една од причините зошто баш она е задолжена за најспецифичната група на деца е нејзиното искуство со истите. Покрај стекнатото образование од областа на педагошката наука, таа има и долгогодишно искуство стекнато работејќи и волонтирајќи во различни невладини организации поврзани со детскиот развој. Особено се истакнува во работа со деца од ранливите категории.
+                            </p>
                         <i class="fa fa-facebook fa-profile-custom"></i> <i class="fa fa-google-plus fa-profile-custom"></i> <i class="fa fa-twitter fa-profile-custom"></i> <i class="fa fa-linkedin fa-profile-custom"></i>
                     </div>   
                 </div>
@@ -157,7 +153,18 @@
                     <div class="profile-info">
                         <h4>Ведран Марковски</h4>
                         <h6>Тренер</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio voluptas ut voluptatum doloribus dolorum voluptatibus enim ipsum veniam modi ea, consequuntur velit maiores omnis consectetur cupiditate expedita temporibus itaque.</p>
+                        <p>Роден во Скопје 1997 година, се занимавал со пливање во период од 2003 до 2015 година. Државен рекордер во Кадетска Конкуренција на 50, 100 и 200 метри грбно. Има учествувано на голем број Меѓународни натпревари.</p>
+                        <i class="fa fa-facebook fa-profile-custom"></i> <i class="fa fa-google-plus fa-profile-custom"></i> <i class="fa fa-twitter fa-profile-custom"></i> <i class="fa fa-linkedin fa-profile-custom"></i>
+                    </div>   
+                </div>
+                <div class="profile">
+                    <div>
+                      <img src="./img/demo-picture.png">
+                    </div>
+                    <div class="profile-info">
+                        <h4>Ања Аксиќ</h4>
+                        <h6>Тренер</h6>
+                        <p>Родена 1998 година, Апсолвент на факултетот за електроника и информацискии технологии – ФЕИТ, смер компјутерски технологии и инженерство. Има тренирано пливање повеќе од 10 години, учесник е на многу национални и меѓународни натпревари. Покрај натпреварите има земено учество и на малиот маратон во Охрид. За поминатото време на базен сведочат голем број на освоени награди, како и прекрасните спомени и другарства кои сеуште траат. </p>
                         <i class="fa fa-facebook fa-profile-custom"></i> <i class="fa fa-google-plus fa-profile-custom"></i> <i class="fa fa-twitter fa-profile-custom"></i> <i class="fa fa-linkedin fa-profile-custom"></i>
                     </div>   
                 </div>
@@ -170,7 +177,6 @@
         <div class="container group-content text-center">
             <h1 class="section-header mb-3">Групи</h1>
             <div class="group-tabs">
- 
                     <div id="group-tab-1">
                         <img src="./img/tab-group-4.png" class="group-img mb-1">
                         <p>Школа за пливање</p>
@@ -219,12 +225,57 @@
     </section>
 
     <!-- Pool Party -->
-    <section class="pool-party">
+    <section class="pool-party mb-3">
         <div class="pool-party-content container">
             <h1>Родендени - Pool Party</h1>
             <p>Прославете незаборавен и уникатен роденден во базен заедно со нашите аниматори.<br> Закажете роденден на базенот Борис Трајковски, уживајте во музиката, водните лудории, дискотеката, храната и пијалоците.<br>
                 Не ги забораваме ниту возрасните, за нив се грижиме со одличен кетеринг, музика, ладни алкохолни и безалкохолни пијалоци.<br>
                 Доколку вашето дете е на возраст од 4 до 13 години и сака забава од соништата веднаш јавете ни се.</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery mb-3" id="gallery">
+        <div class="gallery-content container text-center">
+            <h1 class="section-header mb-3">Галерија</h1>
+            <hr class="custom-hr">
+            <div class="gallery-box">
+                <div id="item-1">
+                    <h2 class="mb-2">Припреми</h2>
+                    <div class="panel-main">
+                        <img src="./img/Pripremi/pripremi-1.jpg" id="selected">
+                    </div>
+                    <div class="thumbs">
+                        <img src="./img/Pripremi/pripremi-1.jpg">
+                        <img src="./img/Pripremi/pripremi-2.jpg">
+                        <img src="./img/Pripremi/pripremi-3.jpg">
+                    </div>
+                </div>
+                <div class="item-2">
+                    <h2 class="mb-2">International Pre-School</h2>
+                    <div class="panel-main">
+                        <img src="./img/IPS/ips-1.jpg" id="selected2">
+                    </div>
+                    <div class="thumbs2 mb-1">
+                        <img src="./img/IPS/ips-1.jpg" alt="">
+                        <img src="./img/IPS/ips-2.jpg" alt="">
+                        <img src="./img/IPS/ips-4.jpg" alt="">
+                    </div>
+                    <p>На наше огромно задоволство, остваривме соработка со училиштето International Pre-School (IPS) така што од сега со нив се дружиме секој петок после часовите! </p>
+                </div>
+                <div class="item-3">
+                    <h2 class="mb-2">Порака</h2>
+                    <div class="panel-main">
+                        <img src="./img/Poraka/poraka-2.jpg" id="selected3">
+                    </div>
+                    <div class="thumbs3 mb-1">
+                        <img src="./img/Poraka/poraka-2.jpg" alt="">
+                        <img src="./img/Poraka/poraka-3.jpg" alt="">
+                        <img src="./img/Poraka/poraka-4.jpg" alt="">
+                    </div>
+                    <p>На наше огромно задоволство повторно го отпочнавме АДАПТИВНОТО ПЛИВАЊЕ и повторно со лицата од ЦПЛИП - ПОРАКА и повторно поддржани од нашите сега веќе добри пријатели Rotary Club Skopje Centar</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -236,6 +287,6 @@
         </div>
     </footer>
 
+    <script src="js/javascript.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/b219fdc4e6.js"></script>
 </html>

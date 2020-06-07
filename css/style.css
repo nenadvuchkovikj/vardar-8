@@ -184,6 +184,7 @@ img{
     font-size: 0.8rem;
     margin-bottom: 1rem;
     color: #A6A6A6;
+    line-height: 1.4;
 }
 
 .pool-party{
@@ -249,7 +250,43 @@ img{
     box-shadow: 1px 1px 1px black;
 }
 
+/* gallery */
+.gallery-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:5rem;
+}
+.gallery-box .panel-main img, .gallery-box .thumbs img, .gallery-box .thumbs2 img, .gallery-box .thumbs3 img{
+    width:100%;
+    height: auto;
+    border-radius: 0.2rem;
+}
 
+.gallery-box .thumbs, .gallery-box .thumbs2, .gallery-box .thumbs3{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.2rem;
+}
+
+.gallery-box .fade-in{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+.gallery-box h2{
+    color:#FF1493;
+    font-size:1.2rem;
+    font-weight: 700;
+    text-shadow: 0.1px 0.1px 0.1px black;
+}
+.gallery-box p{
+    font-size:0.8rem;
+    font-weight: 400;
+}
+#selected, #selected2, #selected3{
+    box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.75);
+    margin-bottom:0.2rem;
+    border-radius: 0.4rem;
+}
 /* footer */
 
 .footer{
@@ -272,40 +309,45 @@ img{
 
 
 /* Fixed */
-
-.fixeddiv {
-    width: 200px;
-    position: fixed;
+#fixeddiv div{
+    position:fixed;
     top:10px;
-    right:0px;
-    color:black;
-    z-index:3;
-    background-color: #fff;
+    right:-10rem;
+    transition:0.5s;
     padding:1rem;
+    width:200px;
+    background-color: #fff;
+    z-index: 3;
     border-radius: 1rem 0 0 1rem;
     box-shadow: -1px 1px 1px 1px black;
-   }
-.fixeddiv h2{
+}
+#fixeddiv div:hover{
+    right:0;
+}
+#fixeddiv:hover img{
+    -webkit-transform:rotate(-360deg);
+    -moz-transform:rotate(-360deg);
+    -o-transform:rotate(-360deg);
+    transform:rotate(-360deg);
+    transition: 1s;
+}
+#fixeddiv:hover i{
+    animation: shake 1s;
+}
+#fixeddiv h2{
     font-weight: 700;
     font-size:1.2rem;
     margin-bottom:0.4rem;
 }
-.fixeddiv h4{
+#fixeddiv h4{
     font-style: 400;
     font-size: 0.9rem;
     color:#999;
     margin-bottom:0.2rem;
 }
-.fixeddiv:hover img{
-    -webkit-transform:rotate(-360deg);
-    -moz-transform:rotate(-360deg);
-    -o-transform:rotate(-360deg);
-    transform:rotate(-360deg);
-    transition: 2s;
-}
-.fixeddiv:hover i{
-    animation: shake 1s;
-}
+
+
+
 .fixedbutton{
     position: fixed;
     bottom: 0px;
@@ -422,7 +464,7 @@ img{
     border:1px solid #FF1493;
     background-color: #FF1493;
 }
-
+ 
 @media(max-width: 1024px){
     .info-tabs{
         grid-template-columns: repeat(2, 1fr);
@@ -471,8 +513,12 @@ img{
     .pool-party, .training, #header{
         min-height: 30rem;
     }
+    .gallery-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
+
 @media(max-width: 700px){
     .info-tabs, .partners-content{
         grid-template-columns: 1fr;
@@ -490,6 +536,9 @@ img{
     .footer-flex{
         flex-direction: column;
     }
+    .gallery-box{
+        grid-template-columns: 1fr;
+    }
 }
 
 @keyframes shake {
@@ -505,6 +554,11 @@ img{
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+@keyframes fadeIn {  to {
+ opacity: 1;
+}
+}
+
   @media(max-height:600px){
     .group-section{
         min-height:20rem;
