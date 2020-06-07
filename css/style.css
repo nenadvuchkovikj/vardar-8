@@ -260,6 +260,7 @@ img{
     width:100%;
     height: auto;
     border-radius: 0.2rem;
+    cursor: pointer;
 }
 
 .gallery-box .thumbs, .gallery-box .thumbs2, .gallery-box .thumbs3{
@@ -286,6 +287,7 @@ img{
     box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.75);
     margin-bottom:0.2rem;
     border-radius: 0.4rem;
+    cursor: auto;
 }
 /* footer */
 
