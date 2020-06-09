@@ -352,9 +352,22 @@ img{
 
 .fixedbutton{
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 10px;
+    right: 15px;
     z-index: 3;
+    padding: 0.2rem 0.6rem;
+    background-color: #FF1493;
+    display: none;
+    border-radius: 0.2rem;
+}
+.fixedbutton:active{
+    background-color: #fff;
+    border:1px solid #FF1493;
+    color:#FF1493;
+    opacity:0.9;
+}
+.fixedbutton:hover{
+    opacity: 0.9;
 }
 
 /* Buttons */
@@ -375,7 +388,6 @@ img{
 }
 
 .btn-lg{
-    /* font-size: 1rem; */
     padding: 0.8rem 1.3rem;
     text-transform: uppercase;
 }
